@@ -78,13 +78,51 @@ else {
 }
 
 
+//JB : Learn about Booleans 
+
+let isTelevisionOn = true
+
+if isTelevisionOn == true {
+    println("Turn it on please!")
+}
+
+if isTelevisionOn != true {
+    println("Make sure to turn it off when you are done")
+}
+else {
+    println("Do you want to use this now?")
+}
 
 
+//JB : Advanced if / else statements
 
+var myFriendsSpeed = 87
+mySpeed = 90
 
+// && means AND
+if mySpeed < 70 && myFriendsSpeed <= 90 {
+    println("Keep Cruising")
+}
+else {
+    println("Slow down police ahead")
+}
 
+// || means OR
+mySpeed = 80
+myFriendsSpeed = 80
 
-
+if mySpeed < 70 || myFriendsSpeed >= 90{
+    println("Keep Cruising")
+}
+else if (mySpeed < 90) {
+    println("My friend's not on the road anymore but i'm going fast!")
+}
+else if (mySpeed < 100){
+    println("I'm going really fast")
+}
+else {
+    println("Slow down police ahead")
+}
 
 
 
