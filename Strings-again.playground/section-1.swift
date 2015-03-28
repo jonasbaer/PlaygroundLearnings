@@ -125,6 +125,19 @@ else {
 }
 
 
+// JB : Nummeric Type Conversion
+
+var intValue = 5
+var doubleValue = 0.5
+
+var sumOfValues = Double(intValue) + doubleValue
+
+var secondDoubleValue = 1.9
+var secondIntegerValue = 8
+
+// Int is just cutting the decimals
+var secondSumOfValues = Int(secondDoubleValue) + secondIntegerValue
+
 
 
 
