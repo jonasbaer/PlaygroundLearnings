@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EE494F511ACF911600C3706A"
-               BuildableName = "IdeaListClone.app"
-               BlueprintName = "IdeaListClone"
-               ReferencedContainer = "container:IdeaListClone.xcodeproj">
+               BlueprintIdentifier = "EE847B2A1ADE2BB400F5DF7C"
+               BuildableName = "99RedBalloons.app"
+               BlueprintName = "99RedBalloons"
+               ReferencedContainer = "container:99RedBalloons.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EE494F661ACF911600C3706A"
-               BuildableName = "IdeaListCloneTests.xctest"
-               BlueprintName = "IdeaListCloneTests"
-               ReferencedContainer = "container:IdeaListClone.xcodeproj">
+               BlueprintIdentifier = "EE847B3F1ADE2BB400F5DF7C"
+               BuildableName = "99RedBalloonsTests.xctest"
+               BlueprintName = "99RedBalloonsTests"
+               ReferencedContainer = "container:99RedBalloons.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EE494F661ACF911600C3706A"
-               BuildableName = "IdeaListCloneTests.xctest"
-               BlueprintName = "IdeaListCloneTests"
-               ReferencedContainer = "container:IdeaListClone.xcodeproj">
+               BlueprintIdentifier = "EE847B3F1ADE2BB400F5DF7C"
+               BuildableName = "99RedBalloonsTests.xctest"
+               BlueprintName = "99RedBalloonsTests"
+               ReferencedContainer = "container:99RedBalloons.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EE494F511ACF911600C3706A"
-            BuildableName = "IdeaListClone.app"
-            BlueprintName = "IdeaListClone"
-            ReferencedContainer = "container:IdeaListClone.xcodeproj">
+            BlueprintIdentifier = "EE847B2A1ADE2BB400F5DF7C"
+            BuildableName = "99RedBalloons.app"
+            BlueprintName = "99RedBalloons"
+            ReferencedContainer = "container:99RedBalloons.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,10 +76,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EE494F511ACF911600C3706A"
-            BuildableName = "IdeaListClone.app"
-            BlueprintName = "IdeaListClone"
-            ReferencedContainer = "container:IdeaListClone.xcodeproj">
+            BlueprintIdentifier = "EE847B2A1ADE2BB400F5DF7C"
+            BuildableName = "99RedBalloons.app"
+            BlueprintName = "99RedBalloons"
+            ReferencedContainer = "container:99RedBalloons.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,10 +95,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EE494F511ACF911600C3706A"
-            BuildableName = "IdeaListClone.app"
-            BlueprintName = "IdeaListClone"
-            ReferencedContainer = "container:IdeaListClone.xcodeproj">
+            BlueprintIdentifier = "EE847B2A1ADE2BB400F5DF7C"
+            BuildableName = "99RedBalloons.app"
+            BlueprintName = "99RedBalloons"
+            ReferencedContainer = "container:99RedBalloons.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

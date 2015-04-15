@@ -9,6 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var labelForYearsResult: UILabel!
+    @IBOutlet weak var insertFieldForYears: UITextField!
+    @IBOutlet weak var convertButtonLabel: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +23,21 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func converButtonPressed(sender: UIButton) {
 
+        var convertedFieldText = insertFieldForYears.text.toInt()!
+
+        if convertedFieldText > 2 {
+            var convertResult = (10.5 * 2) + (4.0 * ((Double(convertedFieldText) - 2)))
+            labelForYearsResult.text = "This are \(convertResult) years for a human ! "
+        }
+        else if convertedFieldText <= 2 {
+            var convertResult = 10.5 * Double(convertedFieldText)
+            labelForYearsResult.text = "This are \(convertResult) years for a human ! "
+        }
+
+        insertFieldForYears.text = ""
+        insertFieldForYears.resignFirstResponder()
+    }
 }
 

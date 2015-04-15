@@ -8,10 +8,10 @@
 
 import UIKit
 
-var containerForInserts = [""]
+//var containerForInserts = [""]
 
 // Type of Class Tiger needed ! ! ! and declared here to ensure global accessibility
-var myTigers:[Tiger] = []
+var myContainers:[ContainerType] = []
 
 
 class ViewController: UIViewController {
@@ -22,7 +22,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        containerForInserts.append("This is the List: ")
+//        containerForInserts.append("This is the List: ")
+        var myContainer = ContainerType() // Key to get access of instances of other class :)
+        myContainer.age = 1
+        myContainer.name = "Early Adopter"
+
+
+
+        myContainers.append(myContainer)
+//        println(myContainers[0])
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,15 +42,15 @@ class ViewController: UIViewController {
         textEntryField.resignFirstResponder()
         var visibleOutputText = ""
 
-        containerForInserts.append(textEntryField.text)
+//        containerForInserts.append(textEntryField.text)
 
         resultOfContainer.hidden = false
 
-        for var i = 0 ; i < containerForInserts.count ; i++ {
-            visibleOutputText += "\(containerForInserts[i]) "
-        }
+//        for var i = 0 ; i < containerForInserts.count ; i++ {
+//            visibleOutputText += "\(containerForInserts[i]) "
+//        }
 
-        resultOfContainer.text  = visibleOutputText
+//        resultOfContainer.text  = visibleOutputText
     }
 }
 

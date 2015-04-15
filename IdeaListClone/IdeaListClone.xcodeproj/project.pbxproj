@@ -13,6 +13,8 @@
 		EE494F5F1ACF911600C3706A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE494F5E1ACF911600C3706A /* Images.xcassets */; };
 		EE494F621ACF911600C3706A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE494F601ACF911600C3706A /* LaunchScreen.xib */; };
 		EE494F6E1ACF911600C3706A /* IdeaListCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE494F6D1ACF911600C3706A /* IdeaListCloneTests.swift */; };
+		EED844311ACFA24A008CE9EC /* Live in the.png in Resources */ = {isa = PBXBuildFile; fileRef = EED844301ACFA24A008CE9EC /* Live in the.png */; };
+		EED97D1D1AD15D67000F2A8B /* freelancer Kopie.png in Resources */ = {isa = PBXBuildFile; fileRef = EED97D1C1AD15D67000F2A8B /* freelancer Kopie.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		EE494F671ACF911600C3706A /* IdeaListCloneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IdeaListCloneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE494F6C1ACF911600C3706A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE494F6D1ACF911600C3706A /* IdeaListCloneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeaListCloneTests.swift; sourceTree = "<group>"; };
+		EED844301ACFA24A008CE9EC /* Live in the.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Live in the.png"; sourceTree = "<group>"; };
+		EED97D1C1AD15D67000F2A8B /* freelancer Kopie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "freelancer Kopie.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,8 @@
 		EE494F551ACF911600C3706A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EED97D1C1AD15D67000F2A8B /* freelancer Kopie.png */,
+				EED844301ACFA24A008CE9EC /* Live in the.png */,
 				EE494F561ACF911600C3706A /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -193,7 +199,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE494F5D1ACF911600C3706A /* Main.storyboard in Resources */,
+				EED97D1D1AD15D67000F2A8B /* freelancer Kopie.png in Resources */,
 				EE494F621ACF911600C3706A /* LaunchScreen.xib in Resources */,
+				EED844311ACFA24A008CE9EC /* Live in the.png in Resources */,
 				EE494F5F1ACF911600C3706A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,6 +415,7 @@
 				EE494F731ACF911600C3706A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EE494F741ACF911600C3706A /* Build configuration list for PBXNativeTarget "IdeaListCloneTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +424,7 @@
 				EE494F761ACF911600C3706A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
