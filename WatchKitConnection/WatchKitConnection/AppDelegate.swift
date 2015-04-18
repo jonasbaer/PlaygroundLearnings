@@ -41,9 +41,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    
+    //-------------------
+
     //JB : This function allows to receive request form Watch and is able to response :)
     func application(application: UIApplication!, handleWatchKitExtensionRequest userInfo: [NSObject : AnyObject]!, reply: (([NSObject : AnyObject]!) -> Void)!) {
-//        var phoneMessage1 = PhoneMessage()
 
         //JB : Pass in information from WatchKit to PhoneMessage.swift dictionary and store reply into phoneMessage
         let phoneMessage = PhoneMessage(storeDictionary: userInfo, reply: reply)
@@ -53,5 +55,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 //        reply(["working" : "now"]) >> Implemented in the ViewController now...
     }
+
+    //-------------------
+
 }
 

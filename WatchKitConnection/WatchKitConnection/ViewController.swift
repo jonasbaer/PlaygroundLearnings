@@ -17,7 +17,10 @@ class ViewController: UIViewController {
 
         messageFromPhone.text = "No message received yet !"
 
+        //------------------- //JB : handleRequest function is specified below...
         NSNotificationCenter.defaultCenter().addObserver(self, selector: ("handleRequest:"), name: "WatchKitDidMakeRequest", object: nil)
+        //-------------------
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,10 +29,11 @@ class ViewController: UIViewController {
     }
 
     @IBAction func getMessageFromPhoneButtonPressed(sender: UIButton) {
-//        var phoneMessage = PhoneMessage()
-//        messageFromPhone.text = phoneMessage.phoneMessageString
+        //Nothing happens on the Phone's App
     }
 
+
+    //-------------------
 
     //JB : WatchKit Notification
     func handleRequest(notification : NSNotification) {
@@ -44,7 +48,7 @@ class ViewController: UIViewController {
 
             switch requestedAction {
                 case "GetMessage":
-                    println("Yeah got the message from the Watch")
+                    println("Here you can E X E C U T E something on your Phone") //JB : Make sure string is similar to the message from the Watch
                 default:
                     println("That didn't work")
             }
@@ -52,11 +56,13 @@ class ViewController: UIViewController {
             //JB: Here I specify what we reply to the Watch... ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! !
 
             //JB: Specify a Dictionary with firstAnswer as the key and the value is "Hello from your Phone :)"
-            let replyToWatchDictionary = ["firstAnswer" : "Hello from your Phone :)"]
+            let replyToWatchDictionary = ["firstAnswer" : "Hello from your Phone :)", "secondAnswer" : "Second Hello from your Phone :))"]
 
-            //JB: Pass this to our PhoneMessage Class
+            //JB: Pass this to our PhoneMessage Class to build the reply block
             phoneMessage.replyBlock(replyToWatchDictionary)
         }
     }
+
+    //-------------------
 }
 

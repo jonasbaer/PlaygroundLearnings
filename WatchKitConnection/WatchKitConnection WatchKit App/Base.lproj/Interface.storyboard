@@ -16,12 +16,18 @@
                             </connections>
                         </button>
                         <label width="136" height="49.5" alignment="left" text="Label" textAlignment="center" numberOfLines="0" id="GRm-UU-RQI"/>
+                        <button width="1" alignment="left" title="Get another one" id="bvW-dg-elN">
+                            <connections>
+                                <action selector="getAnotherOneButtonPressed" destination="AgC-eL-Hgc" id="XNc-JU-Fqv"/>
+                            </connections>
+                        </button>
                     </items>
                     <connections>
                         <outlet property="phoneAnswerMessageLabel" destination="GRm-UU-RQI" id="w7h-hV-uBR"/>
                     </connections>
                 </controller>
             </objects>
+            <point key="canvasLocation" x="375" y="253.5"/>
         </scene>
     </scenes>
 </document>

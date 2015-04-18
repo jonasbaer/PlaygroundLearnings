@@ -8,6 +8,7 @@
 
 import Foundation
 
+//-------------------
 class PhoneMessage {
 
     //JB : Chance that this var doesn't exist - make it optional ;)
@@ -25,14 +26,6 @@ class PhoneMessage {
         //JB : When the storeDictionary is not nil and key = string and value = string too... then...
         if let storeDictionary = storeDictionary as? [String : String] {
             self.watchMessageString = storeDictionary[self.key]
-
-
-
-
-
-
-
-
         }
         else {
             println("No information error")
@@ -42,3 +35,4 @@ class PhoneMessage {
         replyBlock = reply
     }
 }
+//-------------------

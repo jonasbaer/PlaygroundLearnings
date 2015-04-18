@@ -9,7 +9,9 @@
 import WatchKit
 import Foundation
 
+//-------------------
 var key = "FunctionsRequestKey"
+//-------------------
 
 class InterfaceController: WKInterfaceController {
     @IBOutlet weak var phoneAnswerMessageLabel: WKInterfaceLabel!
@@ -31,11 +33,15 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
     @IBAction func requestPhoneButtonPressed() {
-        self.createConnectionToPhone()
-//        self.phoneAnswerMessageLabel.setText(self.answerFromPhone)
+        self.createConnectionToPhone("firstAnswer")
     }
 
-    func createConnectionToPhone() {
+    @IBAction func getAnotherOneButtonPressed() {
+        self.createConnectionToPhone("secondAnswer")
+    }
+
+    //-------------------
+    func createConnectionToPhone(dictionaryElement : String) {
 
         //JB : Create a dictionary which allows passing info between Watch and Phone
         //JB : Has to be the same key e.g. here "FunctionsRequestKey" like in the PhoneMessage.swift class
@@ -45,17 +51,18 @@ class InterfaceController: WKInterfaceController {
         //JB : Print outs the reply or the error in the case of...
         WKInterfaceController.openParentApplication(info, reply: {
             (reply, error) -> Void in
-
             println("reply \(reply) error \(error)")
 
-            self.getAnswerFromPhoneAndConvert(reply as [String : String])
-            
+            //JB : Send the function below the reply to extract it into a string to allow updating our label :)
+            self.getAnswerFromPhoneAndConvert(reply as [String : String] , dictionaryElement: dictionaryElement)
         })
     }
 
-    func getAnswerFromPhoneAndConvert (answerDictionary : [String : String]) {
-
-        let answerFromPhone = answerDictionary["firstAnswer"]
+    //JB : Take Elements out of the Dictionary and convert them into a String: Here firstAnswer or secondAnswer elements available
+    func getAnswerFromPhoneAndConvert (answerDictionary : [String : String] , dictionaryElement : String) {
+        let answerFromPhone = answerDictionary[dictionaryElement]
         self.phoneAnswerMessageLabel.setText(answerFromPhone)
     }
+    //-------------------
+
 }
